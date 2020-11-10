@@ -1,0 +1,14 @@
+// box-sizing reset 
+* {
+    box-sizing: border-box;
+  }
+html {
+    transition: 0.5s all;
+}
+a {
+    text-decoration: none;
+}
+// 無邊框
+input:focus{
+    outline: none;
+  }

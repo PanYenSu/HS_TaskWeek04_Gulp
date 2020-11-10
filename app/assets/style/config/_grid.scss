@@ -1,0 +1,25 @@
+.container{
+    min-width: 100%;
+    margin: 0 auto;
+}
+.flex-rowv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@mixin desktop-below {
+    @madia (max-width:1023px) {
+        @content
+    }  
+}
+@mixin pad-below {
+    @madia (max-width: width 767px;) {
+        @content
+    }
+}
+@mixin mobile {
+    @madia (max-width: width 568px;) {
+        @content
+    }
+}
