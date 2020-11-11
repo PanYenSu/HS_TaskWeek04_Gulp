@@ -10,16 +10,16 @@
 }
 @mixin desktop-below {
     @madia (max-width:1023px) {
-        @content
+        @content;
     }  
 }
 @mixin pad-below {
-    @madia (max-width: width 767px;) {
-        @content
+    @madia (max-width: width 767px) {
+        @content;
     }
 }
 @mixin mobile {
-    @madia (max-width: width 568px;) {
-        @content
+    @madia (max-width: width 568px) {
+        @content;
     }
 }
