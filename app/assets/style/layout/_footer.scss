@@ -1,0 +1,97 @@
+.footer {
+    background-color: $secondary;
+    padding-top: 36px;
+    padding-bottom: 28px;
+    .navbar {
+        justify-content: space-between;
+	    padding-bottom: 36px;
+    }
+    &-nav {
+        .friendlink img {
+            padding-left: 32px;
+        }
+    }
+    &-item {
+        padding-right: 48px;
+        a {
+            color: $white;
+            font-size: $h6;  //16
+        }
+    }
+    &-connect {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+        p {
+            padding-left: 17px;
+            font-size: 4.5rem;
+            line-height: 48px;
+        }
+        li:nth-child(1) {
+            margin-bottom: 19px;
+        }
+    }
+    &-desc {
+        padding-top: 24px;
+        justify-content: space-between;
+    }
+    &-copyright img {
+        padding-right: 38px;
+    }
+    &-copyright p {
+        font-size: $h6;
+    }
+    &-msg {
+        a {
+            color: $white;
+        }
+        &-link {
+        font-size: $h7;
+        }
+        &-item:nth-last-child(1) {
+            padding-left: 62px;
+        }
+        &-item img{
+            display: none;
+
+        }
+    }
+    @include breakpoint(pad) {
+        padding: 40px 0;
+        &-item {
+            padding-right: 40px;
+        }
+        .navbar {
+            padding-bottom: 24px;
+        }
+        &-nav {
+            .friendlink-link img {
+                    padding-left: 24px;
+                    width: 24px;
+                }
+            }
+        
+        &-connect {
+            padding-bottom: 24px;
+            &-item {
+                p {
+                padding-left: 12px;
+                font-size: $h5;
+                line-height: 26px;
+                }
+                img {
+                    width: 32px;
+                }
+            }
+        }
+        &-copyright img {
+            display: none;
+        }
+        &-msg a:nth-last-child(1) {
+            padding-left: 24px;
+        }
+	}
+	@include breakpoint(phone) {
+		font-size: $h5;  //20
+		margin-bottom: 20px;
+	}
+}
