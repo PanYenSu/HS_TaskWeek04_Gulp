@@ -1,25 +1,33 @@
 .container{
-    min-width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
-.flex-rowv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+@mixin breakpoint($point) {
+	@if $point == pad {
+		// @media only screen and(max-width: 992px) {
+        @media (max-width: 992px) {
+			@content;
+		}
+	} @else if $point == phone {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
 }
-@mixin desktop-below {
-    @madia (max-width:1023px) {
-        @content;
-    }  
-}
-@mixin pad-below {
-    @madia (max-width: width 767px) {
-        @content;
-    }
-}
-@mixin mobile {
-    @madia (max-width: width 568px) {
-        @content;
-    }
-}
+
+// @mixin desktop-below {
+//     @madia (max-width:1023px) {
+//         @content;
+//     }  
+// }
+// @mixin pad-below {
+//     @madia (max-width: width 767px) {
+//         @content;
+//     }
+// }
+// @mixin mobile {
+//     @madia (max-width: width 568px) {
+//         @content;
+//     }
+// }

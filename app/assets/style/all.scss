@@ -1,7 +1,12 @@
-@import 'config/grid';
 @import 'config/reset';
+@import 'config/variables';
+@import 'config/grid';
 @import 'config/reboot';
 @import 'config/typography';
-@import 'config/variables';
+@import 'config/spacer';
+@import 'helper/flex';
+@import 'helper/hidetext';
+@import 'layout/header';
+
 
 // wendy https://github.com/Wendy03/glasses_webLayout/tree/main/scss

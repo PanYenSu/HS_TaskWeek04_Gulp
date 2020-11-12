@@ -1,0 +1,18 @@
+.header {
+	padding: 30px 88px;
+	background-color: $secondary;
+	color: $light;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav {
+    // color: $light;
+    &-item {
+        padding-left: 64px;
+    }
+    &-link {
+        color: $light;
+        font-size: 2.5rem;
+    }
+}
