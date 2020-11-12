@@ -8,6 +8,11 @@ html {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 // 無邊框
 input:focus{
     outline: none;

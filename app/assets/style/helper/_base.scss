@@ -1,0 +1,24 @@
+// max-width = 列寬*12(列)+間隔*11
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 64px 10px 80px;
+	@include breakpoint(pad) {
+		max-width: 690px;
+		padding: 40px 0;
+	}
+	@include breakpoint(phone) {
+		width: 100%;
+		padding: 32px 5px;
+	}
+}
+
+.title {
+	font-weight: bold;
+	@include breakpoint(pad) {
+		margin-bottom: 32px;
+	}
+	@include breakpoint(phone) {
+		margin-bottom: 20px;
+	}
+}
