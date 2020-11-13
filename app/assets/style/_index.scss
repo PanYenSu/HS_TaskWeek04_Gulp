@@ -1,0 +1,14 @@
+.banner {
+    background: url(../images/img/banner.png) center center no-repeat;
+    background-size: cover;
+    &-content {
+        line-height: 28px;
+    }
+    .container {
+    height: 840px;
+    align-items: flex-end;
+    // background: url(../../images/img/logo.png) center center no-repeat;
+    // background-size: cover;
+    
+    }
+}

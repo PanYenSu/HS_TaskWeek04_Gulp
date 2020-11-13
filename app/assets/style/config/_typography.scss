@@ -30,4 +30,14 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 4rem;
 	}
 }
+.h3 {
+  font-size: 4.5rem; //36
+  font-weight: bold;
+  @include breakpoint(pad) {
+		font-size: 2.5rem;  //20
+	}
+	@include breakpoint(phone) {
+		font-size: 2rem;
+	}
+}
 

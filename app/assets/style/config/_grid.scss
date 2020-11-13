@@ -1,8 +1,3 @@
-// .container{
-//     max-width: 100%;
-//     margin: 0 auto;
-// }
-
 @mixin breakpoint($point) {
 	@if $point == pad {
 		// @media only screen and(max-width: 992px) {
@@ -19,17 +14,18 @@
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
-	// padding: 64px 10px 80px;
 	@include breakpoint(pad) {
 		max-width: 690px;
-		padding: 40px 0;
 	}
 	@include breakpoint(phone) {
 		max-width: 345px;
-		// width: 100%;
-		// padding: 32px 5px;
 	}
 }
+
+// .container{
+//     max-width: 100%;
+//     margin: 0 auto;
+// }
 
 // @mixin desktop-below {
 //     @madia (max-width:1023px) {
