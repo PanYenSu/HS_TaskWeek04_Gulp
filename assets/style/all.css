@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
   height: 840px;
-  background: url(/assets/images/img/banner.png) center center no-repeat;
+  background: url(../images/img/banner.png) center center no-repeat;
   background-size: cover; }
   .banner .container {
     height: 100%; }
