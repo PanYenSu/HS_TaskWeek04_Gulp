@@ -349,6 +349,46 @@
         width: 730px;
         margin-bottom: 20px;
     }
+    .btn {
+        width: 350px;
+        height: 54px;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 0;
+        &:hover {
+            background: rgba(212, 107, 107, 0.8);
+        }
+    }
+    @include breakpoint(pad) {
+        padding: 40px 0;
+        h2 {
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 2rem;
+            line-height: 24px;
+            width: 450px;
+            margin-bottom: 12px;
+        }
+        .btn {
+            width: 210px;
+            height: 36px;
+            font-size: 1.75rem;
+        }
+    }
+    @include breakpoint(phone) {
+        padding: 32px 0;
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            width: 345px;
+            margin-bottom: 8px;
+        }
+        .btn {
+            width: 165px;
+        }
+    }
     form {
         width: 730px;
         margin-bottom: 42px;
@@ -357,7 +397,7 @@
                 opacity: .5;
                 padding-left: 16px;
             }
-        }
+        
         .form {
             &-group {
             display: flex;
@@ -381,24 +421,37 @@
                     width: 24px;
                     height: 24px;  
                 }
+            }           
+        }
+        @include breakpoint(pad) {
+            width: 450px;
+            margin-bottom: 20px;
+            ::placeholder {
+                font-size: 1.75rem;
+                opacity: .5;
+                padding-left: 12px;
+            }      
+            .form {
+                &-group {
+                    font-size: 1.75px;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+                }
+                &-control {
+                    height: 36px;
+                    &[type="textarea"] {
+                        height: 100px;
+                    }
+                }
+                &-check {
+                    &-input[type="checkbox"] {
+                        width: 17.63px;
+                    }
+                }            
             }
-            
         }
-        .form-btn {
-            text-align: center;
-            margin-top: 24px;
+        @include breakpoint(phone) {
+            width: 345px;       
         }
-        .btn {
-            width: 350px;
-            height: 54px;
-            font-size: 2rem;
-            font-weight: bold;
-            border: 0;
-            &:hover {
-                background: rgba(212, 107, 107, 0.8);
-            }
-            // &:active {
-            //     color: blue;
-            // }
-        }
+    }
 }
