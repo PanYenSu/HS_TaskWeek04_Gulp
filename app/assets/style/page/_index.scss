@@ -1,7 +1,7 @@
 .banner {
     // height: calc(100vh);
     height: 840px;
-    background: url(../images/img/banner.png) center center no-repeat;
+    background: url(/assets/images/img/banner.png) center center no-repeat;
     background-size: cover;
     .container {
         height: 100%;
@@ -10,7 +10,7 @@
         line-height: 28px;
     }
     @include breakpoint(pad) {
-        background: url(../images/img/banner-sm.png) center center no-repeat;
+        background: url(/assets/images/img/banner-sm.png) center center no-repeat;
         background-size: cover;
     }
     @include breakpoint(phone) {
