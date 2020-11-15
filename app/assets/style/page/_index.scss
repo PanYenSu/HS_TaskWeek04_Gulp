@@ -10,7 +10,7 @@
         line-height: 28px;
     }
     @include breakpoint(pad) {
-        background: url(/assets/images/img/banner-sm.png) center center no-repeat;
+        background: url(../images/img/banner-sm.png) center center no-repeat;
         background-size: cover;
     }
     @include breakpoint(phone) {
