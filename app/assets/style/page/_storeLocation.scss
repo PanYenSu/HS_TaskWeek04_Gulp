@@ -1,0 +1,73 @@
+.location {
+    &-banner {
+        height: 304px;
+        background: url(../images/img/qa.png) center center no-repeat;
+        background-size: cover;
+        flex-direction: column-reverse;    
+        @include breakpoint(phone) {
+            height: 143px;
+        }
+        &-title {
+            width: 1110px;
+            .h1 {
+                margin: 0;
+                line-height: 90px;
+            }
+            @include breakpoint(pad) {
+                width: 690px;
+                .h1 {
+                    line-height: 67px;
+                }
+                img {
+                    width: 30px;
+                }
+            }
+            @include breakpoint(phone) {         
+                width: 345px;             
+                .h1 {
+                    line-height: 40px;
+                }
+                img {
+                    width: 16px;
+                }
+            }
+        }
+    }
+    &-card {
+        margin-bottom: 304px;
+        .card {
+            margin-top: 32px;
+            width: 350px;
+            &-img-top {                
+                height: 224px;
+            }
+            h5 {
+                padding: 12px 0 12px 24px;
+                font-size: 3rem;
+                line-height: 30px;
+            }
+            ul {
+                padding: 20px 28px 20px 24px;
+            }
+            li {
+                margin-bottom: 8px;
+                img {
+                    margin-right: 12px;
+                    width: 21px;
+                }
+                p {
+                    font-size: 2.5rem;
+                    line-height: 30px;
+                }
+            }
+            .btn {
+                margin-top: 16px;
+                font-size: 2.375rem;
+                line-height: 26px;
+                padding: 20px 137px;
+            }
+
+        }
+    }
+
+}
