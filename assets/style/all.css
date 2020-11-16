@@ -67,11 +67,6 @@ html {
 
 a {
   text-decoration: none; }
-  a :hover {
-    position: relative;
-    /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
-    top: 1px;
-    left: 1px; }
 
 img {
   display: block;
@@ -145,6 +140,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-1 {
   margin-left: 16px; }
+  @media (max-width: 992px) {
+    .ml-1-md {
+      margin-left: 8px; } }
+  @media (max-width: 767px) {
+    .ml-1-sm {
+      margin-left: 4px; } }
 
 .mr-1 {
   margin-right: 16px; }
@@ -157,6 +158,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-2 {
   margin-left: 24px; }
+  @media (max-width: 992px) {
+    .ml-2-md {
+      margin-left: 12px; } }
+  @media (max-width: 767px) {
+    .ml-2-sm {
+      margin-left: 6px; } }
 
 .mr-2 {
   margin-right: 24px; }
@@ -169,6 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-3 {
   margin-left: 32px; }
+  @media (max-width: 992px) {
+    .ml-3-md {
+      margin-left: 16px; } }
+  @media (max-width: 767px) {
+    .ml-3-sm {
+      margin-left: 8px; } }
 
 .mr-3 {
   margin-right: 32px; }
@@ -181,6 +194,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-4 {
   margin-left: 40px; }
+  @media (max-width: 992px) {
+    .ml-4-md {
+      margin-left: 20px; } }
+  @media (max-width: 767px) {
+    .ml-4-sm {
+      margin-left: 10px; } }
 
 .mr-4 {
   margin-right: 40px; }
@@ -193,6 +212,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-5 {
   margin-left: 48px; }
+  @media (max-width: 992px) {
+    .ml-5-md {
+      margin-left: 24px; } }
+  @media (max-width: 767px) {
+    .ml-5-sm {
+      margin-left: 12px; } }
 
 .mr-5 {
   margin-right: 48px; }
@@ -205,6 +230,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-6 {
   margin-left: 60px; }
+  @media (max-width: 992px) {
+    .ml-6-md {
+      margin-left: 30px; } }
+  @media (max-width: 767px) {
+    .ml-6-sm {
+      margin-left: 15px; } }
 
 .mr-6 {
   margin-right: 60px; }
@@ -217,6 +248,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-7 {
   margin-left: 64px; }
+  @media (max-width: 992px) {
+    .ml-7-md {
+      margin-left: 32px; } }
+  @media (max-width: 767px) {
+    .ml-7-sm {
+      margin-left: 16px; } }
 
 .mr-7 {
   margin-right: 64px; }
@@ -229,6 +266,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .ml-8 {
   margin-left: 80px; }
+  @media (max-width: 992px) {
+    .ml-8-md {
+      margin-left: 40px; } }
+  @media (max-width: 767px) {
+    .ml-8-sm {
+      margin-left: 20px; } }
 
 .mr-8 {
   margin-right: 80px; }
@@ -366,6 +409,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-danger {
   background-color: #650300; }
 
+.bg-black {
+  background-color: #000; }
+
 .header {
   padding: 30px 88px;
   background-color: #AA0601;
@@ -423,7 +469,17 @@ h1, h2, h3, h4, h5, h6 {
     left: 1px; }
   @media (max-width: 767px) {
     .nav-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 100%;
+      height: 44px;
       padding: 0; }
       .nav-link:hover {
         background-color: #a77b7b;
@@ -557,6 +613,61 @@ h1, h2, h3, h4, h5, h6 {
           width: 46px;
           position: absolute;
           margin-left: 293px; } }
+
+.m-pagination .display {
+  display: none; }
+  @media (max-width: 992px) {
+    .m-pagination .display {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.m-pagination .pagination .pagination-item {
+  border: 1px solid #555555; }
+
+.m-pagination .pagination p {
+  color: #555555;
+  font-size: 2.375rem;
+  padding: 10px 17px 14px 14px; }
+
+.m-pagination .pagination a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #555555;
+  font-size: 2.25rem; }
+  .m-pagination .pagination a:hover {
+    background: #000000;
+    color: #fff; }
+    .m-pagination .pagination a:hover p {
+      color: #fff; }
+
+@media (max-width: 992px) {
+  .m-pagination .pagination .pagination-item {
+    border: 1px solid #555555; }
+  .m-pagination .pagination p {
+    color: #555555;
+    font-size: 2.375rem;
+    padding: 10px 17px 14px 14px; }
+  .m-pagination .pagination a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #555555;
+    font-size: 2.25rem; }
+    .m-pagination .pagination a:hover {
+      background: #000000;
+      color: #fff; }
+      .m-pagination .pagination a:hover p {
+        color: #fff; } }
+
+@media (max-width: 767px) {
+  .m-pagination .pagination p {
+    color: #555555;
+    font-size: 1.5rem;
+    padding: 8px 8px 7px 9px; } }
 
 .banner {
   height: 840px;
@@ -984,14 +1095,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 103px;
   border-left: 1px solid rgba(97, 96, 96, 0.7);
   border-left: 1px solid #DCDCDC; }
-  .product-navbar li a {
-    display: block; }
-    .product-navbar li a:hover {
-      border-bottom: 16px solid #AA0601; }
-    .product-navbar li a p {
-      color: #000;
-      font-size: 5.25rem;
-      margin-left: 8px; }
+  .product-navbar li .sunbar {
+    width: 462px;
+    height: 103px; }
+  .product-navbar li a:hover {
+    border-bottom: 16px solid #AA0601; }
+  .product-navbar li p {
+    color: #000;
+    font-size: 5.25rem;
+    margin-left: 8px; }
   .product-navbar li img {
     height: 48px; }
   .product-navbar li:nth-last-child(1) {
@@ -1001,8 +1113,9 @@ h1, h2, h3, h4, h5, h6 {
   .product-navbar li {
     width: 256px;
     height: 69px; }
-    .product-navbar li:hover {
-      border-bottom: 8px solid #AA0601; }
+    .product-navbar li .sunbar {
+      width: 256px;
+      height: 69px; }
     .product-navbar li p {
       font-size: 3.5rem; }
     .product-navbar li img {
@@ -1012,8 +1125,9 @@ h1, h2, h3, h4, h5, h6 {
   .product-navbar li {
     width: 125px;
     height: 35px; }
-    .product-navbar li:hover {
-      border-bottom: 4px solid #AA0601; }
+    .product-navbar li .sunbar {
+      width: 125px;
+      height: 35px; }
     .product-navbar li p {
       font-size: 1.75rem;
       margin-left: 5px; }
@@ -1079,46 +1193,23 @@ h1, h2, h3, h4, h5, h6 {
       .product-main .box-color {
         width: 15px;
         height: 15px; } }
-  .product-main .pagination .page-item {
-    border: 1px solid #555555; }
-  .product-main .pagination p {
-    color: #555555;
-    font-size: 2.375rem;
-    padding: 10px 17px 14px 14px; }
-  .product-main .pagination a {
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #555555;
-    font-size: 2.25rem; }
-    .product-main .pagination a:hover {
-      background: #000000;
-      color: #fff; }
-      .product-main .pagination a:hover p {
-        color: #fff; }
-  @media (max-width: 767px) {
-    .product-main .pagination p {
-      color: #555555;
-      font-size: 1.5rem;
-      padding: 8px 8px 7px 9px; } }
 
 .product-navbar li {
   width: 462px;
   height: 103px;
   border-left: 1px solid rgba(97, 96, 96, 0.7);
   border-left: 1px solid #DCDCDC; }
-  .product-navbar li a {
-    display: inline-block; }
-    .product-navbar li a:hover {
-      border-bottom: 16px solid #AA0601; }
-    .product-navbar li a p {
-      color: #000;
-      font-size: 5.25rem;
-      margin-left: 8px; }
-    .product-navbar li a img {
-      display: inline;
-      height: 48px; }
+  .product-navbar li .sunbar {
+    width: 462px;
+    height: 103px; }
+  .product-navbar li a:hover {
+    border-bottom: 16px solid #AA0601; }
+  .product-navbar li p {
+    color: #000;
+    font-size: 5.25rem;
+    margin-left: 8px; }
+  .product-navbar li img {
+    height: 48px; }
   .product-navbar li:nth-last-child(1) {
     border-right: 1px solid #DCDCDC; }
 
@@ -1126,8 +1217,9 @@ h1, h2, h3, h4, h5, h6 {
   .product-navbar li {
     width: 256px;
     height: 69px; }
-    .product-navbar li:hover {
-      border-bottom: 8px solid #AA0601; }
+    .product-navbar li .sunbar {
+      width: 256px;
+      height: 69px; }
     .product-navbar li p {
       font-size: 3.5rem; }
     .product-navbar li img {
@@ -1137,8 +1229,9 @@ h1, h2, h3, h4, h5, h6 {
   .product-navbar li {
     width: 125px;
     height: 35px; }
-    .product-navbar li:hover {
-      border-bottom: 4px solid #AA0601; }
+    .product-navbar li .sunbar {
+      width: 125px;
+      height: 35px; }
     .product-navbar li p {
       font-size: 1.75rem;
       margin-left: 5px; }
@@ -1204,28 +1297,63 @@ h1, h2, h3, h4, h5, h6 {
       .product-sun-main .box-color {
         width: 15px;
         height: 15px; } }
-  .product-sun-main .pagination .page-item {
-    border: 1px solid #555555; }
-  .product-sun-main .pagination p {
-    color: #555555;
-    font-size: 2.375rem;
-    padding: 10px 17px 14px 14px; }
-  .product-sun-main .pagination a {
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #555555;
-    font-size: 2.25rem; }
-    .product-sun-main .pagination a:hover {
-      background: #000000;
-      color: #fff; }
-      .product-sun-main .pagination a:hover p {
-        color: #fff; }
+
+.location-banner {
+  height: 304px;
+  background: url(../images/img/qa.png) center center no-repeat;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
   @media (max-width: 767px) {
-    .product-sun-main .pagination p {
-      color: #555555;
-      font-size: 1.5rem;
-      padding: 8px 8px 7px 9px; } }
+    .location-banner {
+      height: 143px; } }
+  .location-banner-title {
+    width: 1110px; }
+    .location-banner-title .h1 {
+      margin: 0;
+      line-height: 90px; }
+    @media (max-width: 992px) {
+      .location-banner-title {
+        width: 690px; }
+        .location-banner-title .h1 {
+          line-height: 67px; }
+        .location-banner-title img {
+          width: 30px; } }
+    @media (max-width: 767px) {
+      .location-banner-title {
+        width: 345px; }
+        .location-banner-title .h1 {
+          line-height: 40px; }
+        .location-banner-title img {
+          width: 16px; } }
+
+.location-card {
+  margin-bottom: 304px; }
+  .location-card .card {
+    margin-top: 32px;
+    width: 350px; }
+    .location-card .card-img-top {
+      height: 224px; }
+    .location-card .card h5 {
+      padding: 12px 0 12px 24px;
+      font-size: 3rem;
+      line-height: 30px; }
+    .location-card .card ul {
+      padding: 20px 28px 20px 24px; }
+    .location-card .card li {
+      margin-bottom: 8px; }
+      .location-card .card li img {
+        margin-right: 12px;
+        width: 21px; }
+      .location-card .card li p {
+        font-size: 2.5rem;
+        line-height: 30px; }
+    .location-card .card .btn {
+      margin-top: 16px;
+      font-size: 2.375rem;
+      line-height: 26px;
+      padding: 20px 137px; }
 
 /*# sourceMappingURL=all.css.map */
