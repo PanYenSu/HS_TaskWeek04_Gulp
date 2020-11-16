@@ -2,21 +2,23 @@
     li {
         width: 462px;
         height: 103px;
+        .sunbar {
+            width: 462px;
+            height: 103px;
+        }
         a {           
-            display: inline-block;
-            &:hover {
+            &:hover {                
                 border-bottom: 16px solid #AA0601;
             }
-            p {
-                color: #000;
-                font-size: 5.25rem;
-                margin-left: 8px;
-            }
-            img {
-                display: inline;
-                height: 48px;           
-            }
-        }    
+        } 
+        p {
+            color: #000;
+            font-size: 5.25rem;
+            margin-left: 8px;
+        }   
+        img {
+            height: 48px;           
+        }  
         
         border-left: 1px solid rgba(97, 96, 96, 0.7);
         border-left: 1px solid #DCDCDC;
@@ -29,8 +31,9 @@
         li {
             width: 256px;
             height: 69px;
-            &:hover {
-                border-bottom: 8px solid #AA0601;
+            .sunbar {
+                width: 256px;
+                height: 69px;
             }
             p {
                 font-size: 3.5rem;
@@ -44,8 +47,9 @@
         li {
             width: 125px;
             height: 35px;
-            &:hover {
-                border-bottom: 4px solid #AA0601;
+            .sunbar {
+                width: 125px;
+                height: 35px;
             }
             p {
                 font-size: 1.75rem;
@@ -147,29 +151,35 @@
         }
     }
     .pagination {
-        .page-item {
-            border: 1px solid #555555;
-        }
-        p {
-            color: #555555;
-            font-size: 2.375rem;
-            padding: 10px 17px 14px 14px;
-        }
-        a {
-            text-align: center;
-            display: block;
-            width: 100%;
-            height: 100%;
-            color: #555555;
-            font-size: 2.25rem;
-            &:hover {
-                background: #000000;
-                color: #fff;
-                p {
+        display: none;
+        @include breakpoint(pad) {
+            display: flex;
+            .page-item {
+                border: 1px solid #555555;
+            }
+            p {
+                color: #555555;
+                font-size: 2.375rem;
+                padding: 10px 17px 14px 14px;
+            }
+            a {
+                text-align: center;
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: #555555;
+                font-size: 2.25rem;
+                &:hover {
+                    background: #000000;
                     color: #fff;
+                    p {
+                        color: #fff;
+                    }
                 }
             }
+
         }
+        
         @include breakpoint(phone) {
             p {
                 color: #555555;

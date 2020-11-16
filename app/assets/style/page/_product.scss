@@ -2,17 +2,20 @@
     li {
         width: 462px;
         height: 103px;
+        .sunbar {
+            width: 462px;
+            height: 103px;
+        }
         a {           
-            display: block;
-            &:hover {
+            &:hover {                
                 border-bottom: 16px solid #AA0601;
-            }
-            p {
-                color: #000;
-                font-size: 5.25rem;
-                margin-left: 8px;
-            }
-        }    
+            }            
+        }   
+        p {
+            color: #000;
+            font-size: 5.25rem;
+            margin-left: 8px;
+        } 
         img {
             height: 48px;           
         }
@@ -27,8 +30,9 @@
         li {
             width: 256px;
             height: 69px;
-            &:hover {
-                border-bottom: 8px solid #AA0601;
+            .sunbar {
+                width: 256px;
+                height: 69px;
             }
             p {
                 font-size: 3.5rem;
@@ -42,8 +46,9 @@
         li {
             width: 125px;
             height: 35px;
-            &:hover {
-                border-bottom: 4px solid #AA0601;
+            .sunbar {
+                width: 125px;
+                height: 35px;
             }
             p {
                 font-size: 1.75rem;

@@ -15,6 +15,16 @@ $spacers: (
 	.m {
 		&l-#{$i} {
 			margin-left: $val;
+			@include breakpoint(pad) {
+				&-md {
+					margin-left: $val*0.5;
+				}
+			}
+			@include breakpoint(phone) {
+				&-sm {
+					margin-left: $val*0.25;
+				}
+			}
 		}
 		&r-#{$i} {
 			margin-right: $val;
@@ -27,3 +37,4 @@ $spacers: (
 		}
     }
 }
+
