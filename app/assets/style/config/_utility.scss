@@ -1,3 +1,28 @@
+@mixin breakpoint($point) {
+	@if $point == pad {
+		// @media only screen and(max-width: 992px) {
+        @media (max-width: 992px) {
+			@content;
+		}
+	} @else if $point == phone {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
+}
+// max-width = 列寬*12(列)+間隔*11
+// max-width 的單位不要用 %
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+	@include breakpoint(pad) {
+		max-width: 690px;
+	}
+	@include breakpoint(phone) {
+		max-width: 345px;
+	}
+}
+
 $spacer: 16px;
 
 $spacers: (

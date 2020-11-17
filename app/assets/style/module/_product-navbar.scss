@@ -1,0 +1,56 @@
+.product-navbar {
+    li {
+        a { 
+            width: 462px;
+            padding: 28px 0 27px;
+            border-left: 1px solid rgba(97, 96, 96, 0.7);
+            border-left: 1px solid #DCDCDC;
+            &:nth-last-child(1) {
+                border-right: 1px solid #DCDCDC;
+            }
+            &:hover {                
+                border-bottom: 16px solid #AA0601;
+            }            
+        }   
+        p {
+            color: #000;
+            font-size: 5.25rem;
+            margin-left: 8px;
+        } 
+        img {
+            height: 48px;           
+        }
+        @include breakpoint(pad) {
+            a { 
+                width: 256px;
+                padding: 19px 0 18px;
+                &:hover {                
+                    border-bottom: 8px solid #AA0601;
+                } 
+            }
+            p {
+                font-size: 3.5rem;
+            }
+            img {
+                height: 32px;
+            }
+        }
+        @include breakpoint(phone) {
+            a { 
+                width: 125px;
+                padding: 10px 0 10px;
+                &:hover {                
+                    border-bottom: 4px solid #AA0601;
+                } 
+            }
+            p {
+                font-size: 1.75rem;
+                margin-left: 5px;
+            }
+            img {
+                height: 15px;
+
+            }
+        }
+    }   
+}
