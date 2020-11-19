@@ -63,3 +63,19 @@ $spacers: (
     }
 }
 
+
+$properties: (
+	
+  "pt": padding-top,
+  "pb": padding-bottom,
+  "pl": padding-left, 
+  "pr": padding-right,
+);
+@each $property, $property-value in $properties {
+  @for $i from 1 through 10 {
+    .#{$property}-#{$i} {
+      #{$property-value}: #{$i}px*8;
+    }
+  }
+}
+
